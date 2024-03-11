@@ -1,5 +1,9 @@
 import pickle
 import streamlit as st
+import sys
+
+sys.path.insert(1, "C:/past/your/coppied/path/here/streamlit_option_menu")
+
 from streamlit_option_menu import option_menu
 malaria_model = pickle.load(open('malaria_model.sav','rb'))
 with st.sidebar:
